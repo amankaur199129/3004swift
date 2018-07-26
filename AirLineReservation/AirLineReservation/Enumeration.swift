@@ -10,11 +10,26 @@ import Foundation
 
 enum AirportList : Int, CaseIterable {
     
-    case Chandigarh_Airport = 1
-    case Indira_Gandhi_International_Airport = 2
-    case Chatrapati_Shivaji_International_Airport = 3
-    case Rajiv_Gandhi_International_Airport = 4
-    case Sri_Guru_Ram_Das_International_Airport = 5
+    case Indira_Gandhi_International_Airport_India = 1
+    case Toronto_Pearson_Airport_Canada = 2
+    case Chatrapati_Shivaji_International_Airport_India = 3
+    case Rajiv_Gandhi_International_Airport_India = 4
+    case Sri_Guru_Ram_Das_International_Airport_India = 5
+    case Frankfoot_Airport_Germany = 6
+}
+enum AirLineList : Int , CaseIterable
+{
+    case Jet_Airways = 1
+    case Air_Canada = 2
+    case Air_India = 3
+    case Indigo = 4
+    case Spice_Jet = 5
+    case None = 6 
+}
+enum AirPlaneType : String , CaseIterable{
+   case Boeing
+   case Airbus 
+
 }
 
 

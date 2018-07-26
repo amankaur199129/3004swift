@@ -7,30 +7,30 @@
 //
 
 import Foundation
-class Flight{
+class Flight : IDisplay{
     private var flight_id : String?
     private var flight_from : AirportList
     private var flight_to : AirportList
-    private var flight_schedule_date : Date?
+    private var flight_schedule_date : String?
     private var flight_airline_id : Int?
     private var flight_airplane_id : String?
     private var flight_pilot_id : String?
     
     init() {
         self.flight_id = ""
-        self.flight_from = ""
-        self.flight_to = ""
-        self.flight_schedule_date = nil
+        self.flight_from = AirportList.None
+        self.flight_to = AirportList.None
+        self.flight_schedule_date = ""
         self.flight_airline_id = 0
         self.flight_airplane_id = ""
         self.flight_pilot_id = ""
         
         }
-    init(flight_id: String, flight_from: AirportList, flight_to: AirportList, flight_schedule_date: Date, flight_airline_id: Int, flight_airplane_id: String, flight_pilot_id: String ) {
+    init(flight_id: String, flight_from: AirportList, flight_to: AirportList, flight_schedule_date: String, flight_airline_id: Int, flight_airplane_id: String, flight_pilot_id: String ) {
         
         self.flight_id = flight_id
-        self.flight_from = AirportList.None
-        self.flight_to = AirportList.None
+        self.flight_from = AirportList
+        self.flight_to = AirportList
         self.flight_schedule_date = flight_schedule_date
         self.flight_airline_id = flight_airline_id
         self.flight_airplane_id = flight_airplane_id
@@ -50,7 +50,7 @@ class Flight{
         get{return self.flight_to}
         set{self.flight_to = newValue}
     }
-    var  FlightScheduleDate : Date?{
+    var  FlightScheduleDate : String?{
         get{return self.flight_schedule_date}
         set{self.flight_schedule_date = newValue}
     }
@@ -150,13 +150,13 @@ func  display()
     
     
     print ("AirlineID: ")
-    for AirlineID in AirlineList.allcases
+    for AirlineID in AirLineList.allCases
     {
         print("Enter \(AirlineID.rawValue) for \(AirlineID)")
     }
    
     let choice2 = (Int)(readLine()!)
-    self.flight_airline_id = AirlineList(rawValue:choice2!)
+    self.flight_airline_id = AirLineList(rawValue:choice2!)
     
     //print("Enter Date(in DD/MM/YYYY Format)")
    // let dateString = readLine()

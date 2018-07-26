@@ -17,6 +17,7 @@
 		9B5F1E362102822500F60144 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E352102822500F60144 /* main.swift */; };
 		9B5F1E3D2102823A00F60144 /* FlightClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E3C2102823A00F60144 /* FlightClass.swift */; };
 		9B5F1E3F21028BB000F60144 /* PlaneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E3E21028BB000F60144 /* PlaneType.swift */; };
+		9B72B413210A48E7000877D1 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B72B412210A48E7000877D1 /* DataHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -43,6 +44,7 @@
 		9B5F1E352102822500F60144 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B5F1E3C2102823A00F60144 /* FlightClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightClass.swift; sourceTree = "<group>"; };
 		9B5F1E3E21028BB000F60144 /* PlaneType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaneType.swift; sourceTree = "<group>"; };
+		9B72B412210A48E7000877D1 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				9B1F8E5421091275004F716A /* Passenger.swift */,
 				9B1F8E5621091CCB004F716A /* Enumeration.swift */,
 				9B1F8E582109238B004F716A /* Protocols.swift */,
+				9B72B412210A48E7000877D1 /* DataHelper.swift */,
 			);
 			path = AirLineReservation;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				9B2C95AE2103D1C9009A5804 /* Employee.swift in Sources */,
 				9B1F8E592109238B004F716A /* Protocols.swift in Sources */,
 				9B5F1E362102822500F60144 /* main.swift in Sources */,
+				9B72B413210A48E7000877D1 /* DataHelper.swift in Sources */,
 				9B1F8E512109092B004F716A /* AirlineEnquiry.swift in Sources */,
 				9B1F8E5321090E14004F716A /* Reservation.swift in Sources */,
 				9B5F1E3F21028BB000F60144 /* PlaneType.swift in Sources */,
