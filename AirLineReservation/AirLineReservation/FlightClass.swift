@@ -29,8 +29,8 @@ class Flight : IDisplay{
     init(flight_id: String, flight_from: AirportList, flight_to: AirportList, flight_schedule_date: String, flight_airline_id: Int, flight_airplane_id: String, flight_pilot_id: String ) {
         
         self.flight_id = flight_id
-        self.flight_from = AirportList
-        self.flight_to = AirportList
+        self.flight_from = AirportList.None
+        self.flight_to = AirportList.None
         self.flight_schedule_date = flight_schedule_date
         self.flight_airline_id = flight_airline_id
         self.flight_airplane_id = flight_airplane_id
@@ -118,7 +118,7 @@ func displayData() -> String
     var returnData = ""
     returnData += "\n Flight From : \(self.flight_from)"
     returnData += "\n Flight To : \(self.flight_to)"
-    returnData += "\n Airline Name : \(self.flight_airline_id)"
+    returnData += "\n Airline Name : \(String(describing: self.flight_airline_id))"
     return returnData
     
 }

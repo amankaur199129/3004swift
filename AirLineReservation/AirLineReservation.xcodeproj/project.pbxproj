@@ -14,6 +14,7 @@
 		9B1F8E592109238B004F716A /* Protocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1F8E582109238B004F716A /* Protocols.swift */; };
 		9B2C95AE2103D1C9009A5804 /* Employee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C95AD2103D1C9009A5804 /* Employee.swift */; };
 		9B2C95B02103D973009A5804 /* AirLine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B2C95AF2103D973009A5804 /* AirLine.swift */; };
+		9B3AF8ED210B976800D71CCE /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B3AF8EC210B976800D71CCE /* Util.swift */; };
 		9B5F1E362102822500F60144 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E352102822500F60144 /* main.swift */; };
 		9B5F1E3D2102823A00F60144 /* FlightClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E3C2102823A00F60144 /* FlightClass.swift */; };
 		9B5F1E3F21028BB000F60144 /* PlaneType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B5F1E3E21028BB000F60144 /* PlaneType.swift */; };
@@ -40,6 +41,7 @@
 		9B1F8E582109238B004F716A /* Protocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Protocols.swift; sourceTree = "<group>"; };
 		9B2C95AD2103D1C9009A5804 /* Employee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Employee.swift; sourceTree = "<group>"; };
 		9B2C95AF2103D973009A5804 /* AirLine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirLine.swift; sourceTree = "<group>"; };
+		9B3AF8EC210B976800D71CCE /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		9B5F1E322102822500F60144 /* AirLineReservation */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = AirLineReservation; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B5F1E352102822500F60144 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		9B5F1E3C2102823A00F60144 /* FlightClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightClass.swift; sourceTree = "<group>"; };
@@ -88,6 +90,7 @@
 				9B1F8E5621091CCB004F716A /* Enumeration.swift */,
 				9B1F8E582109238B004F716A /* Protocols.swift */,
 				9B72B412210A48E7000877D1 /* DataHelper.swift */,
+				9B3AF8EC210B976800D71CCE /* Util.swift */,
 			);
 			path = AirLineReservation;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				9B2C95AE2103D1C9009A5804 /* Employee.swift in Sources */,
 				9B1F8E592109238B004F716A /* Protocols.swift in Sources */,
 				9B5F1E362102822500F60144 /* main.swift in Sources */,
+				9B3AF8ED210B976800D71CCE /* Util.swift in Sources */,
 				9B72B413210A48E7000877D1 /* DataHelper.swift in Sources */,
 				9B1F8E512109092B004F716A /* AirlineEnquiry.swift in Sources */,
 				9B1F8E5321090E14004F716A /* Reservation.swift in Sources */,
