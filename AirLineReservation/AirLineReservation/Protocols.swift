@@ -16,3 +16,7 @@ public protocol CaseIterable {
     associatedtype AllCases: Collection where AllCases.Element == Self
     static var allCases: AllCases { get }
 }
+public protocol FlightUpdate {
+    func addFlight() -> String
+    func updateFlight() -> String
+}

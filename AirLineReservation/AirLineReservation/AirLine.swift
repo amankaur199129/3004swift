@@ -13,6 +13,14 @@ class AirLine
     private var airlines_descreption : String?
     private var airlines_type : String?
     
+    func displayData() -> String {
+        var returnData = ""
+        returnData += "\n AirLineID : \(self.airlines_id  ?? 0)"
+        returnData += "\n AirLineDescription  : \(self.airlines_descreption ?? "")"
+        returnData += "\n AirlineType : \(self.airlines_type ?? "")"
+        return returnData
+    }
+    
     init()
     {
         self.airlines_id = 0
@@ -41,4 +49,17 @@ class AirLine
         get{return self.AirlineType}
         set{self.airlines_type = newValue}
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
 }

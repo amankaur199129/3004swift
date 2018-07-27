@@ -16,6 +16,7 @@ enum AirportList : Int, CaseIterable {
     case Rajiv_Gandhi_International_Airport_India = 4
     case Sri_Guru_Ram_Das_International_Airport_India = 5
     case Frankfoot_Airport_Germany = 6
+    case None = 7
 }
 enum AirLineList : Int , CaseIterable
 {
@@ -26,9 +27,10 @@ enum AirLineList : Int , CaseIterable
     case Spice_Jet = 5
     case None = 6 
 }
-enum AirPlaneType : String , CaseIterable{
-   case Boeing
-   case Airbus 
+enum AirPlaneType : Int , CaseIterable{
+   case Boeing = 1
+   case Airbus = 2
+    case None = 3
 
 }
 
