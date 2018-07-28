@@ -17,6 +17,7 @@ private var employee_address: String?
 private var employee_designation: String?
 private var employee_SIN_number: String?
 
+    
   init()
 {
    self.employee_id = 0
@@ -72,9 +73,54 @@ private var employee_SIN_number: String?
         get{return self.EmployeeSinNumber}
         set{self.employee_SIN_number = newValue}
 
-        
-        
     }
+    func displayData() ->   String{
+    var returnData = ""
+        if self.employee_id != nil{
+            returnData += "\n EmployeeID : \(self.employee_id ?? 0)"
+        }
+        
+        if self.employee_name != nil{
+            returnData += "\n Employee Name : \(self.employee_name ?? "Unknown")"
+        
+        }
+        if self.employee_email != nil{
+            returnData += "\n Employee Email : \(self.employee_email ?? "unknown@gmail.com")"
+        }
+        
+        if self.employee_mobile != nil{
+            returnData += "\n Employee Mobile : \(self.employee_mobile ?? 0)"
+        }
+        
+        if self.employee_address != nil{
+            returnData += "\n Employee Address : \(self.employee_address ?? "Unknown")"
+        }
+            if self.employee_address != nil{
+                returnData += "\n Employee Designation : \(self.employee_designation ?? "Unknown")"
+                
+        }
+                if self.employee_SIN_number != nil{
+                    returnData += "\n EmployeeSinNumber : \(self.employee_SIN_number ?? "Unknown")"
+        }
+            
+         return returnData
     }
-
+    func registerEmployee(){
+        print("Enter Employee ID : ")
+        self.employee_id = (Int)(readLine()!)
+        print("Enter Employee Name : ")
+        self.employee_name = readLine()!
+        print("Enter Employee Email : ")
+        self.employee_email = readLine()!
+        print("Enter Employee Mobile : ")
+        self.employee_mobile = (Int)(readLine()!)
+        print("Enter Employee Address : ")
+        self.employee_address = readLine()!
+        print("Enter Employee Designation : ")
+        self.employee_designation = readLine()!
+        print("Enter Employee SIN Number : ")
+        self.employee_SIN_number = readLine()!
+      }
+    
+   }
 

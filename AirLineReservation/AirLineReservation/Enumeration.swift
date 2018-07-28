@@ -3,13 +3,13 @@
 //  AirLineReservation
 //
 //  Created by MacStudent on 2018-07-25.
-//  Copyright © 2018 MacStudent. All rights reserved.
+//  Copyright © 2018 MacStudent. All rights reserb ved.
 //
 
 import Foundation
 
 enum AirportList : Int, CaseIterable {
-    
+
     case Indira_Gandhi_International_Airport_India = 1
     case Toronto_Pearson_Airport_Canada = 2
     case Chatrapati_Shivaji_International_Airport_India = 3
@@ -18,14 +18,14 @@ enum AirportList : Int, CaseIterable {
     case Frankfoot_Airport_Germany = 6
     case None = 7
 }
-enum AirLineList : Int , CaseIterable
+enum AirLineType : Int , CaseIterable
 {
     case Jet_Airways = 1
     case Air_Canada = 2
     case Air_India = 3
     case Indigo = 4
     case Spice_Jet = 5
-    case None = 6 
+    case None = 6
 }
 enum AirPlaneType : Int , CaseIterable{
    case Boeing = 1

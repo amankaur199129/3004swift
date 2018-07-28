@@ -8,6 +8,10 @@
 
 import Foundation
 class Flight : IDisplay{
+    func displayData() -> String {
+    
+    }
+    
      var flight_id : String?
      var flight_from : AirportList
      var flight_to : AirportList
@@ -117,22 +121,21 @@ class Flight : IDisplay{
 //            return returnData
 //    }
     
-//     func registerUser(){
-//        print("Enter Flight ID : ")
-//       self.flight_id = (readLine()!)
-//     print("Enter Flight From  : ")
-//       self.flight_from = (readLine()!)
-//       print("Enter Flight To : ")
-//       self.flight_to = (readLine()!)
-//       print("Enter Flight Schedule Date : ")
-//       self.flight_schedule_date = Date()
-//        print("Enter Airline ID : ")
-//       self.flight_airline_id = (Int)(readLine()!)
-//       print("Enter Airplane ID : ")
-//        self.flight_airplane_id = (readLine()!)
-//       print("Enter Pilot ID : ")
-//       self.flight_pilot_id = (readLine()!)
-//
+    func registerUser(){
+        print("Enter Flight ID : ")
+     self.flight_id = (readLine()!)
+    print("Enter Flight From  : ")
+        self.flight_from = AirportList.None
+      print("Enter Flight To : ")
+      self.flight_to = AirportList.None
+       print("Enter Flight Schedule Date : ")
+       self.flight_schedule_date = Date()
+       print("Enter Airline ID : ")
+      self.flight_airline_id = (Int)(readLine()!)
+     print("Enter Airplane ID : ")
+       self.flight_airplane_id = (readLine()!)
+      print("Enter Pilot ID : ")
+      self.flight_pilot_id = (readLine()!)
     
 func displayData() -> String
 {
@@ -171,16 +174,16 @@ func  display()
     
     
     print ("AirlineID: ")
-    for AirlineID in AirLineList.allCases
+    for AirlineID in AirLineType.allCases
     {
         print("Enter \(AirlineID.rawValue) for \(AirlineID)")
     }
    
-   // let choice2 = (Int)(readLine()!)
-   // self.flight_airline_id = AirLineList(rawValue:choice2!)
+    let choice2 = (Int)(readLine()!)
+    self.flight_airline_id = AirLineType(rawValue: choice2!).map { $0.rawValue }
     
-    //print("Enter Date(in DD/MM/YYYY Format)")
-   // let dateString = readLine()
+    print("Enter Date(in DD/MM/YYYY Format)")
+    _ = readLine()
     
     
     
@@ -189,7 +192,7 @@ func  display()
         }
     }
 
-
+}
 
 
 
