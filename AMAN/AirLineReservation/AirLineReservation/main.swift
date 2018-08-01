@@ -22,11 +22,15 @@ var pass = Passenger()
 //srujana.registerPassenger()
 //print(srujana.displayData())
 
-while choice != 2{
+while choice != 5{
     print("\n----what would you like to do !-----")
     print("\t 1:  browse Flight")
     print("\t 2: Book a Flight")
-    print("\t 3: Exit")
+    print("\t 3: Add Reservation")
+    print("\t 4: Show Reservation")
+    print("\t 5:  Update Reservation")
+    print("\t 6: Cancel Reservation")
+    print("\t 7: Exit")
     print("-------------------")
     print("Enter your choice please : ")
     choice = (Int)(readLine()!)!
@@ -35,9 +39,13 @@ switch choice{
 case 1:
     dataHelper.displayflights()
 case 2:
-    resrve.addFlight()
+   resrve.addReservation()
     pass.registerPassenger()
-case 3:
+    resrve.showReservation()
+case 4:
+    print(resrve.displayData())
+    
+case 5:
    exit(0)
 default:
     print("Please enter valid menu option")

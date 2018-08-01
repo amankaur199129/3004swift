@@ -22,3 +22,4 @@ public protocol FlightUpdate {
     func updateFlight() -> String
 }
 
+

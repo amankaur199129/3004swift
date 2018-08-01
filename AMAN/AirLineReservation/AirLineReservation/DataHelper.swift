@@ -9,11 +9,12 @@
 import Foundation
 class DataHelper{
     
-
+    var ReservationList = [String: Reservation]()
 var  List = [String : FlightClass]()
 var EmployeeList = [Int : Employee]()
 
 init(){
+    self.displayReservation()
     self.loadFlightsData()
      self.loadEmployeeData()
 }
@@ -41,7 +42,45 @@ func loadFlightsData(){
     print("Error: \(error)")
     }
 }
-
+    func loadEmployeeData(){
+        let ram = Employee(employee_id: 1, employee_name: "ram", employee_email: "ram@gmail.com", employee_mobile: 123456 , employee_address: "toronto", employee_designation: "pilot", employee_SIN_number: "eee")
+        EmployeeList[ram.EmployeeID!] = ram
+        
+        let sham = Employee(employee_id: 2, employee_name: "sham", employee_email: "sham@gmail.com", employee_mobile: 234567, employee_address: "vancouver", employee_designation: "pilot", employee_SIN_number: "www")
+        EmployeeList[sham.EmployeeID!] = sham
+        
+        let sita = Employee(employee_id: 3, employee_name: "sita", employee_email: "sita@gmail.com", employee_mobile: 45678, employee_address: "kitchner", employee_designation: "pilot", employee_SIN_number: "dddd")
+        EmployeeList[sita.EmployeeID!] = sita
+    }
+    func displayReservation(){
+        print("Reservation Details")
+        Util.drawLine()
+        print("\t ID \t\t Description \t\t\t\t PassengerID \t\t FlightID \t\t Date \t\t SeatNo \t\t Status \t\t MealType")
+        for (_, value) in self.ReservationList.sorted(by: { $0.key < $1.key }){
+            Util.drawLine()
+            print("\t \(value.reservation_id) ------ \(value.reservation_description) ------ \(value.reservation_passenger_id) ------ \(value.reservation_flight) ------ \(value.reservation_date)-----\(value.reservation_seat_no)------\(value.reservation_status)------\(value.reservation_meal_type)")
+        }
+        Util.drawLine()
+    }
+    func displayEmployees(){
+        //closure
+        for (_,Empl) in List.sorted(by: {$0.key < $1.key}){
+            print("\(Empl.displayData())")
+        }
+        func searchFlightFrom(source: AirportList, toDestination: AirportList) -> [FlightClass]? {
+            var flights = [FlightClass]()
+            for(_,flight) in List{
+                if flight.flight_from == source && flight.flight_to == toDestination{
+                    flights.append(flight)
+                }
+            }
+            return flights
+        }
+        
+        
+        
+        
+        
 func displayflights()
 {
     print("Flight Details")
@@ -64,26 +103,20 @@ for (_, value) in self.List.sorted(by: { $0.key < $1.key })
             return nil
         }
     }
-
-    func loadEmployeeData(){
-        let ram = Employee(employee_id: 1, employee_name: "ram", employee_email: "ram@gmail.com", employee_mobile: 123456 , employee_address: "toronto", employee_designation: "pilot", employee_SIN_number: "eee")
-        EmployeeList[ram.EmployeeID!] = ram
-        
-        let sham = Employee(employee_id: 2, employee_name: "sham", employee_email: "sham@gmail.com", employee_mobile: 234567, employee_address: "vancouver", employee_designation: "pilot", employee_SIN_number: "www")
-        EmployeeList[sham.EmployeeID!] = sham
-        
-        let sita = Employee(employee_id: 3, employee_name: "sita", employee_email: "sita@gmail.com", employee_mobile: 45678, employee_address: "kitchner", employee_designation: "pilot", employee_SIN_number: "dddd")
-        EmployeeList[sita.EmployeeID!] = sita
-    }
-    func displayEmployees(){
-        //closure
-        for (_,Empl) in List.sorted(by: {$0.key < $1.key}){
-            print("\(Empl.displayData())")
-        }
-        
-        
-    }
-
-
+   
 }
+    
+    
+    
+    
+    
+    
+    
+
+
+        
+    }
+
+
+
 

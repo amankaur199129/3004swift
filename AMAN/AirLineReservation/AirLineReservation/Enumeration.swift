@@ -26,10 +26,11 @@ enum AirLineType : Int , CaseIterable
     case Spice_Jet = 5
     case None = 6
 }
-//enum AirPlaneType : Int , CaseIterable{
-// case Boeing = 1
-// case Airbus = 2
-//  case None = 3
+enum AirPlaneType : Int , CaseIterable{
+    case Boeing = 1
+    case Airbus = 2
+    case None = 3
+}
 enum ReservationList : CaseIterable
 {
     case Reserved
@@ -37,6 +38,17 @@ enum ReservationList : CaseIterable
     case Cancelled
     case None
 }
+
+    enum MealTypeList : Int, CaseIterable {
+        case vegetarian = 1
+        case Non_vegetarian = 2
+        case None = 3
+    }
+
+
+
+
+
 
 
 extension CaseIterable where Self: Hashable {
@@ -57,3 +69,4 @@ extension CaseIterable where Self: Hashable {
         })
     }
 }
+
